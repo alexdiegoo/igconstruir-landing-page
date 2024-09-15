@@ -7,7 +7,7 @@ function About() {
         <section id="about" className="w-full flex flex-col gap-4 lg:flex-row mt-20 md:mt-28">
             <div>
                 <h1 
-                    className="text-5xl md:text-6xl max-w-xl"
+                    className="text-4xl md:text-6xl max-w-xl"
                 >O profissional de construção que você <strong className="text-cta">confia</strong>.</h1>
                 <p className="text-xl opacity-75 font-light mt-4 mb-8">Obtenha resultados de qualidade garantidos com IGConstruir.</p>
 
