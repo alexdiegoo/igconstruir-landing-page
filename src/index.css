@@ -7,4 +7,8 @@
 
 body {
     @apply bg-bg-primary;
+    @apply text-text-primary;
+    @apply font-sans;
+    @apply relative;
+    overflow-x: hidden;
 }

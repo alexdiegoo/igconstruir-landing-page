@@ -6,7 +6,7 @@ import Logo from "../../../public/logo.png";
 function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-    const menuItemClassName = clsx("md:block md:text-lg text-4xl text-text-primary font-sans", {
+    const menuItemClassName = clsx("md:block md:text-lg text-4xl", {
       visible: mobileMenuOpen,
       hidden: !mobileMenuOpen,
     });
@@ -14,7 +14,7 @@ function Header() {
     return (
         <header className={
             clsx(
-                "text-white p-8 flex flex-col md:flex-row py-6 items-center",
+                "flex flex-col md:flex-row py-6 items-center",
                 {
                   "h-screen": mobileMenuOpen,
                   "justify-between": !mobileMenuOpen,
