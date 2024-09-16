@@ -27,8 +27,9 @@ function Header() {
                 alt="Logo: IG Construir" 
                 className="w-44"/>
             <nav className={`w-1/2 flex gap-10 ${mobileMenuOpen ? 'flex-col' : ''}`}>
-                <a href="#about" className={menuItemClassName}>Sobre</a>   
+                <a href="#home" className={menuItemClassName}>Inicio</a>   
                 <a href="#services" className={menuItemClassName}>Serviços</a>   
+                <a href="#about" className={menuItemClassName}>Sobre</a>   
                 <a href="#contact" className={menuItemClassName}>Contato</a>  
 
                 <button

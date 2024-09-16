@@ -58,7 +58,10 @@ const services = [
 import { useState } from "react";
 import { AiFillCheckCircle } from "react-icons/ai";
 
-import Image from "../../../public/image_2.png"
+import Image from "../../../public/image_2.png";
+
+import ButtonContact from "../../components/ButtonContact";
+
 
 function ServiceCheckList() {
     const [selectedItem, setSelectedItem] = useState(1);
@@ -94,8 +97,13 @@ function ServiceCheckList() {
                 <div className="w-screen mt-20">
                     <img src={Image} className="w-full" />
                 </div>
+
+                <div className="w-full flex justify-center py-6 mt-12">
+                    <ButtonContact />
+                </div>
                 
             </div>
+
         </div>
     );
 }
