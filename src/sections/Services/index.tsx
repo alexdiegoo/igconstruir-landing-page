@@ -1,4 +1,3 @@
-import ServiceCheckList from "../../components/ServiceChecklist";
 
 function Services() {
     return (
@@ -10,8 +9,6 @@ function Services() {
                 <p className="text-xl opacity-75 font-light mt-4 mb-8">
                 Oferecemos serviços de contratação profissionais e confiáveis para uma grande variedade de necessidades, trabalhando com dedicação que nos garantiu uma ótima reputação.
                 </p>
-
-                <ServiceCheckList />
             </div>
         </section>
     );

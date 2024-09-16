@@ -61,24 +61,27 @@ import { AiFillCheckCircle } from "react-icons/ai";
 import Image from "../../../public/image_2.png";
 
 import ButtonContact from "../../components/ButtonContact";
+import Container from "../Container";
 
 
 function ServiceCheckList() {
     const [selectedItem, setSelectedItem] = useState(1);
     return (
         <div className="w-full">
-            <div className="flex gap-14 pb-6 overflow-x-auto">
-                {
-                    services.map(service => {
-                        return <button 
-                            onClick={() => {
-                                setSelectedItem(service.id);
-                            }}
-                            className={`${selectedItem === service.id ? 'font-bold opacity-100 text-lg' : 'opacity-75 font-regular'} font-sans text-text-primary transition-all`}>{service.label}</button>
-                    })
-                }
-            </div>
-            <div className="w-screen bg-bg-card absolute h-min left-0 py-24">
+            <Container>
+                <div className="flex gap-14 pb-6 overflow-x-auto">
+                    {
+                        services.map(service => {
+                            return <button 
+                                onClick={() => {
+                                    setSelectedItem(service.id);
+                                }}
+                                className={`${selectedItem === service.id ? 'font-bold opacity-100 text-lg' : 'opacity-75 font-regular'} font-sans text-text-primary transition-all`}>{service.label}</button>
+                        })
+                    }
+                </div>
+            </Container>
+            <div className="w-full bg-bg-card h-min py-20">
                 <div className="w-3/4 mx-auto max-w-7xl flex flex-col gap-8">
                     {
                         services.find(service => service.id === selectedItem)?.checklist.map(
@@ -98,7 +101,7 @@ function ServiceCheckList() {
                     <img src={Image} className="w-full" />
                 </div>
 
-                <div className="w-full flex justify-center py-6 mt-12">
+                <div className="w-full flex justify-center mt-12">
                     <ButtonContact />
                 </div>
                 

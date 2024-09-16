@@ -4,14 +4,20 @@ import Container from "./components/Container";
 import Home from "./sections/Home";
 import Services from "./sections/Services";
 import About from "./sections/About";
+import ServiceCheckList from "./components/ServiceChecklist";
+
+
 
 function App() {
   return (
-    <div className="w-3/4 mx-auto max-w-7xl">
-      <Header />
+    <div className="w-screen">
       <Container>
+        <Header />
         <Home />
         <Services />
+      </ Container>
+      <ServiceCheckList />
+      <Container>
         <About />
       </Container>
     </div>
