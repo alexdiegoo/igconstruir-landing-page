@@ -4,8 +4,8 @@ import Container from "./components/Container";
 import Home from "./sections/Home";
 import Services from "./sections/Services";
 import About from "./sections/About";
-import ServiceCheckList from "./components/ServiceChecklist";
 
+import ServiceCheckList from "./components/ServiceChecklist";
 
 
 function App() {
