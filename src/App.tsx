@@ -4,6 +4,8 @@ import Container from "./components/Container";
 import Home from "./sections/Home";
 import Services from "./sections/Services";
 import About from "./sections/About";
+import Contact from "./sections/Contact";
+
 
 import ServiceCheckList from "./components/ServiceChecklist";
 
@@ -19,6 +21,7 @@ function App() {
       <ServiceCheckList />
       <Container>
         <About />
+        <Contact />
       </Container>
     </div>
   )
